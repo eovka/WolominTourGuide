@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Wołomin Tour Guide</string>
+    <string name="about_wolomin">About Wołomin</string>
+    <string name="town_history">History of a town</string>
+    <string name="see">See</string>
+    <string name="eat">Eat</string>
+    <string name="drink">Drink</string>
+    <string name="sleep">Sleep</string>
+</resources>
