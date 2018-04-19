@@ -1,18 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:id="@+id/title_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:text="@string/about_wolomin"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Wołomin was first mentioned in chronicles from the 15th century. It remained a small village in central Masovia without much significance. Since 19th century, and especially after the foundation of the railway in 1862, Wołomin became a summer holiday destination for Warsaw citizens. The Wołomin glassworks were founded in the beginning of the 20th century. Wołomin was declared a town in 1919 after the return of Poland's sovereignty. In 1920 the Polish counter-attack in the Battle of Warsaw was conducted near Wołomin. In the interbellum Wołomin retained its status as a multinational town. There was a big Jewish and Russian minority. Polish writer Zofia Nałkowska had a house in Wołomin, which became an inspiration for her 1925 book House over meadows (Polish: Dom nad łąkami)."/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-</LinearLayout>
+        <ImageView
+            android:id="@+id/location_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/image_description"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/wolomin_panorama" />
+
+        <TextView
+            android:id="@+id/title_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:padding="@dimen/standard_padding"
+            android:textSize="@dimen/title_size"
+            tools:text="@string/about_wolomin" />
+
+        <TextView
+            android:id="@+id/address_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:padding="@dimen/standard_padding"
+            android:textSize="@dimen/bigger_text"
+            tools:text="@string/wolomin_coordinates" />
+
+        <TextView
+            android:id="@+id/location_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:padding="@dimen/standard_padding"
+            android:textSize="@dimen/normal_text"
+            tools:text="@string/wolomin_info" />
+
+    </LinearLayout>
+</layout>

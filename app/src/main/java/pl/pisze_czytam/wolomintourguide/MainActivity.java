@@ -1,28 +1,30 @@
 package pl.pisze_czytam.wolomintourguide;
 
+import android.databinding.DataBindingUtil;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
-import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
+
+import pl.pisze_czytam.wolomintourguide.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
+    ActivityMainBinding bind;
     private DrawerLayout drawerLayout;
     NavigationView navigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        ViewPager viewPager = findViewById(R.id.pager_view);
-        CategoryAdapter adapter = new CategoryAdapter(getSupportFragmentManager(), this);
-        viewPager.setAdapter(adapter);
+        bind = DataBindingUtil.setContentView(this, R.layout.activity_main);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -36,11 +38,23 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 item.setChecked(true);
+                displayFragment(item);
                 drawerLayout.closeDrawers();
-                // Add code - what do after clicking menu (fragments)
                 return true;
             }
         });
+    }
+
+    public void displayFragment(MenuItem menuItem) {
+        Fragment fragment;
+        switch (menuItem.getItemId()) {
+            case R.id.nav_about:
+                fragment = new MainFragment();
+                break;
+            default: fragment = new MainFragment();
+        }
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.fragment_container, fragment).commit();
     }
 
     @Override
