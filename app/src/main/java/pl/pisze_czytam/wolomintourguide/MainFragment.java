@@ -2,7 +2,6 @@ package pl.pisze_czytam.wolomintourguide;
 
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
-import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -11,8 +10,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import pl.pisze_czytam.wolomintourguide.databinding.DetailsActivityBinding;
-
-import static android.graphics.Typeface.BOLD;
 
 public class MainFragment extends Fragment {
     DetailsActivityBinding bind;
@@ -24,10 +21,20 @@ public class MainFragment extends Fragment {
         bind = DataBindingUtil.inflate(inflater, R.layout.details_activity, container, false);
         View rootView = bind.getRoot();
 
+        Bundle bundle = getArguments();
+        if (bundle != null) {
+            int imageId = bundle.getInt("imageId");
+            String name = bundle.getString("name");
+            String description = bundle.getString("description");
+            bind.locationImage.setImageDrawable(getResources().getDrawable(imageId));
+            bind.titleView.setText(name);
+            bind.addressView.setText(description);
+        } else {
         bind.locationImage.setImageDrawable(getResources().getDrawable(R.drawable.wolomin_panorama));
         bind.titleView.setText(R.string.about_wolomin);
         bind.addressView.setText(R.string.wolomin_coordinates);
         bind.locationDescription.setText(R.string.wolomin_info);
+        }
 
         bind.addressView.setOnClickListener(new View.OnClickListener() {
             @Override
