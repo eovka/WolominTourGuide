@@ -3,7 +3,8 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:fontFamily">serif-monospace</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="android:textColor">@color/textColor</item>
     </style>
 
     <style name="TextStyle">
@@ -12,7 +13,7 @@
         <item name="android:fontFamily">serif</item>
         <item name="android:layout_marginStart">@dimen/bigger_margin</item>
         <item name="android:layout_marginEnd">@dimen/bigger_margin</item>
-        <item name="android:paddingBottom">@dimen/small_margin</item>
+        <item name="android:paddingBottom">@dimen/standard_margin</item>
         <item name="android:textColor">@color/textColor</item>
     </style>
 </resources>

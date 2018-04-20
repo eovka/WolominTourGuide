@@ -32,7 +32,7 @@ public class MainFragment extends Fragment {
         bind.addressView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Uri mapsUri = Uri.parse("geo:@52.3425904,21.2011826&q=Wołomin");
+                Uri mapsUri = Uri.parse("geo:@52.3425904,21.2011826,13z?q=Wołomin");
                 Intent mapIntent = new Intent(Intent.ACTION_VIEW, mapsUri);
                 mapIntent.setPackage("com.google.android.apps.maps");
                 if (mapIntent.resolveActivity(getActivity().getPackageManager()) != null) {

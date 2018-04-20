@@ -9,4 +9,22 @@
     <string name="drink">Drink</string>
     <string name="sleep">Sleep</string>
     <string name="image_description">an image of the location</string>
+    <string name="kebab_king">Kebab King</string>
+    <string name="kebab_address">17B Wileńska Street</string>
+    <string name="pobite_talerze">Pobite Talerze</string>
+    <string name="pobite_address">21 Warszawska Street</string>
+    <string name="street_food">Street Food Vegan &#38; Grill</string>
+    <string name="street_address">17 Mieszka I Street</string>
+    <string name="przystanek_w">Przystanek W</string>
+    <string name="przystanek_address">9 Ogrodowa Street</string>
+    <string name="wakacje_na_poludniu">Wakacje na południu</string>
+    <string name="wakacje_adress">2 Prądzyńskiego Street</string>
+    <string name="obiadek_wilenska">Obiadek Wileńska</string>
+    <string name="obiadek_w_address">41 Wileńska Street</string>
+    <string name="obiadek_patelnia">Obiadek na patelni</string>
+    <string name="obiadek_p_address">4A Moniuszki Street</string>
+    <string name="thai_viet">Thai &#38; Viet</string>
+    <string name="thai_viet_address">10 Moniuszki Street</string>
+    <string name="biesiadowo">Biesiadowo</string>
+    <string name="biesiadowo_address">10 Sportowa Street</string>
 </resources>
