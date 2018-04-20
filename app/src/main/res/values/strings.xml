@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Wołomin Tour Guide</string>
     <string name="about_wolomin">About Wołomin</string>
-    <string name="wolomin_coordinates">52°20′48″N &#8212; 21°14′31″E</string>
+    <string name="wolomin_coordinates">52°20′48″N, 21°14′31″E</string>
     <string name="wolomin_info">The main town of Wołomin County in the Masovian Voivodship. A suburb of Warsaw situated 20 km from the capital of Poland, near the railway to Białystok. </string>
     <string name="town_history">History of a town</string>
     <string name="see">See</string>

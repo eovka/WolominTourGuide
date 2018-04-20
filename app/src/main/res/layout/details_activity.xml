@@ -10,35 +10,29 @@
         <ImageView
             android:id="@+id/location_image"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/image_height"
+            android:layout_marginBottom="@dimen/bigger_margin"
             android:contentDescription="@string/image_description"
             android:scaleType="centerCrop"
             tools:src="@drawable/wolomin_panorama" />
 
         <TextView
             android:id="@+id/title_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="serif-monospace"
-            android:padding="@dimen/standard_padding"
+            style="@style/TextStyle"
             android:textSize="@dimen/title_size"
             tools:text="@string/about_wolomin" />
 
         <TextView
             android:id="@+id/address_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="serif-monospace"
-            android:padding="@dimen/standard_padding"
+            style="@style/TextStyle"
+            android:drawablePadding="@dimen/small_margin"
+            android:drawableStart="@drawable/ic_location_on_black"
             android:textSize="@dimen/bigger_text"
             tools:text="@string/wolomin_coordinates" />
 
         <TextView
             android:id="@+id/location_description"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="serif-monospace"
-            android:padding="@dimen/standard_padding"
+            style="@style/TextStyle"
             android:textSize="@dimen/normal_text"
             tools:text="@string/wolomin_info" />
 
