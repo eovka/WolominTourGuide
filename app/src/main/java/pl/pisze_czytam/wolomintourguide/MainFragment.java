@@ -25,10 +25,12 @@ public class MainFragment extends Fragment {
         if (bundle != null) {
             int imageId = bundle.getInt("imageId");
             String name = bundle.getString("name");
+            String address = bundle.getString("address");
             String description = bundle.getString("description");
             bind.locationImage.setImageDrawable(getResources().getDrawable(imageId));
             bind.titleView.setText(name);
-            bind.addressView.setText(description);
+            bind.addressView.setText(address);
+            bind.locationDescription.setText(description);
         } else {
         bind.locationImage.setImageDrawable(getResources().getDrawable(R.drawable.wolomin_panorama));
         bind.titleView.setText(R.string.about_wolomin);

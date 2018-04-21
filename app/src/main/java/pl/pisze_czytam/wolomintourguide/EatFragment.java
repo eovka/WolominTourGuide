@@ -25,15 +25,15 @@ public class EatFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.list_view, container, false);
 
         final ArrayList<Location> eatLocs = new ArrayList<>();
-        eatLocs.add(new Location(R.drawable.wolomin_panorama, getString(R.string.kebab_king), getString(R.string.kebab_address)));
-        eatLocs.add(new Location(R.drawable.wolomin_panorama, getString(R.string.pobite_talerze), getString(R.string.pobite_address)));
-        eatLocs.add(new Location(R.drawable.wolomin_panorama, getString(R.string.street_food), getString(R.string.street_address)));
-        eatLocs.add(new Location(R.drawable.wolomin_panorama, getString(R.string.przystanek_w), getString(R.string.przystanek_address)));
-        eatLocs.add(new Location(R.drawable.wolomin_panorama, getString(R.string.wakacje_na_poludniu), getString(R.string.wakacje_na_poludniu)));
-        eatLocs.add(new Location(R.drawable.wolomin_panorama, getString(R.string.obiadek_patelnia), getString(R.string.obiadek_p_address)));
-        eatLocs.add(new Location(R.drawable.wolomin_panorama, getString(R.string.obiadek_wilenska), getString(R.string.obiadek_w_address)));
-        eatLocs.add(new Location(R.drawable.biesiadowo, getString(R.string.biesiadowo), getString(R.string.biesiadowo_address)));
-        eatLocs.add(new Location(R.drawable.wolomin_panorama, getString(R.string.thai_viet), getString(R.string.thai_viet_address)));
+        eatLocs.add(new Location(R.drawable.wolomin_panorama, getString(R.string.kebab_king), getString(R.string.kebab_address), getString(R.string.kebab_info)));
+        eatLocs.add(new Location(R.drawable.wolomin_panorama, getString(R.string.pobite_talerze), getString(R.string.pobite_address), getString(R.string.kebab_info)));
+        eatLocs.add(new Location(R.drawable.wolomin_panorama, getString(R.string.street_food), getString(R.string.street_address), getString(R.string.kebab_info)));
+        eatLocs.add(new Location(R.drawable.wolomin_panorama, getString(R.string.przystanek_w), getString(R.string.przystanek_address), getString(R.string.kebab_info)));
+        eatLocs.add(new Location(R.drawable.wolomin_panorama, getString(R.string.wakacje_na_poludniu), getString(R.string.wakacje_na_poludniu), getString(R.string.kebab_info)));
+        eatLocs.add(new Location(R.drawable.wolomin_panorama, getString(R.string.obiadek_patelnia), getString(R.string.obiadek_p_address), getString(R.string.kebab_info)));
+        eatLocs.add(new Location(R.drawable.wolomin_panorama, getString(R.string.obiadek_wilenska), getString(R.string.obiadek_w_address), getString(R.string.kebab_info)));
+        eatLocs.add(new Location(R.drawable.biesiadowo, getString(R.string.biesiadowo), getString(R.string.biesiadowo_address), getString(R.string.kebab_info)));
+        eatLocs.add(new Location(R.drawable.wolomin_panorama, getString(R.string.thai_viet), getString(R.string.thai_viet_address), getString(R.string.kebab_info)));
 
         Collections.sort(eatLocs, new Comparator<Location>() {
             @Override
@@ -53,9 +53,11 @@ public class EatFragment extends Fragment {
                 Bundle bundle = new Bundle();
                 int imageId = eatLocs.get(position).getImageResource();
                 String name = eatLocs.get(position).getLocationName();
+                String address = eatLocs.get(position).getLocationAddress();
                 String description = eatLocs.get(position).getLocationDescription();
                 bundle.putInt("imageId", imageId);
                 bundle.putString("name", name);
+                bundle.putString("address", address);
                 bundle.putString("description", description);
                 detailFragment.setArguments(bundle);
                 FragmentManager fragmentManager = getFragmentManager();
