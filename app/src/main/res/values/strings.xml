@@ -2,7 +2,9 @@
     <string name="app_name">Wołomin Tour Guide</string>
     <string name="about_wolomin">About Wołomin</string>
     <string name="wolomin_coordinates">52°20′48″N, 21°14′31″E</string>
-    <string name="wolomin_info">The main town of Wołomin County in the Masovian Voivodship. A suburb of Warsaw situated 20 km from the capital of Poland, near the railway to Białystok. </string>
+    <string name="wolomin_info">The main town of Wołomin County in the Masovian Voivodship. A suburb
+        of Warsaw situated 20 km from the capital of Poland, near the railway to Białystok.
+        \n\nIt has approximately 37,000 inhabitants and covers an area of 17 sq km (6 sq mi).</string>
     <string name="town_history">History of a town</string>
     <string name="where_to">Where to&#8230;</string>
     <string name="go">Go</string>
@@ -12,21 +14,51 @@
     <string name="image_description">an image of the location</string>
     <string name="kebab_king">Kebab King</string>
     <string name="kebab_address">17B Wileńska Street</string>
-    <string name="kebab_info">Kurdish cuisine: kebab – on plate and sandwiches, kofta. Meat and vegetarian food. Beer. \n \nOpen daily 10 am – 1 am</string>
+    <string name="kebab_info">Middle Eastern and Kurdish cuisine: kebabs – on plate and sandwiches, koftas. Meat and
+        vegetarian food. Beer. \n \nMon&#8211;Fri: 10 am &#8211; 11 pm \nSat: 10 am &#8211; 1 am \nSun: 9 am &#8211; 12 pm
+    \n \nTel: +48 22 316 37 37 </string>
     <string name="pobite_talerze">Pobite Talerze</string>
     <string name="pobite_address">21 Warszawska Street</string>
+    <string name="pobite_info">American and European cuisine: hamburgers, regional beers.
+        \n \nMon&#8211;Thu: 1 pm &#8211; 10 pm \nFri: 1 pm &#8211; 11 pm \nSat: 12 am &#8211; 11 pm \nSun: 12 am &#8211; 10 pm
+    \n \nTel: +48 795 408 464</string>
     <string name="street_food">Street Food Vegan &#38; Grill</string>
     <string name="street_address">17 Mieszka I Street</string>
+    <string name="street_info">East Mediterranean street food: vegetarian with a lot of dishes for meat lovers too.
+        \n \nMon&#8211;Sat: 11 am &#8211; 10 pm \nSun: 12 am &#8211; 10 pm
+        \n \nTel: +48 729 407 308</string>
     <string name="przystanek_w">Przystanek W</string>
     <string name="przystanek_address">9 Ogrodowa Street</string>
+    <string name="przystanek_info">European mix cuisine; a lunch of a day, regional beers.
+        \n \nMon&#8211;Thu: 9 am &#8211; 10 pm \nFri: 9 am &#8211; 12 pm \nSat: 12 am &#8211; 10 pm \nSun: 12 am &#8211; 9 pm
+        \n \nTel: +48 882 633 557</string>
     <string name="wakacje_na_poludniu">Wakacje na południu</string>
-    <string name="wakacje_adress">2 Prądzyńskiego Street</string>
+    <string name="wakacje_address">2 Prądzyńskiego Street</string>
+    <string name="wakacje_info">Balkan cuisine, mainly Greek, Croatian and Bulgarian.
+    \n \nMon&#8211;Thu: 11 am &#8211; 10 pm \nFri: 11 am &#8211; 11 pm \nSat: 12 am &#8211; 10 pm \nSun: 12 am &#8211; 9 pm
+    \n \nTel: +48 531 531 727</string>
     <string name="obiadek_wilenska">Obiadek Wileńska</string>
     <string name="obiadek_w_address">41 Wileńska Street</string>
+    <string name="obiadek_w_info">Polish traditional lunches and dinners; a special lunch of a day
+        \n \nMon&#8211;Fri: 10 am &#8211; 6 pm \nSat&#8211;Sun: closed
+        \n \nTel: +48 606 843 743</string>
     <string name="obiadek_patelnia">Obiadek na patelni</string>
     <string name="obiadek_p_address">4A Moniuszki Street</string>
+    <string name="obiadek_p_info">Frying Polish traditional food, dumplings and meat dishes
+    \n \nMon&#8211;Fri: 11 am &#8211; 7 pm \nSat: 12 am &#8211; 6 pm\nSun: closed
+    \n \nTel: +48 512 925 046</string>
     <string name="thai_viet">Thai &#38; Viet</string>
     <string name="thai_viet_address">10 Moniuszki Street</string>
+    <string name="thai_viet_info"> Thai and Vietnamese cuisine with Polish ingredients.
+    \n \nMon&#8211;Sun: 11 am &#8211; 9 pm</string>
     <string name="biesiadowo">Biesiadowo</string>
     <string name="biesiadowo_address">10 Sportowa Street</string>
+    <string name="biesiadowo_info">Polish version of Italian cuisine: pizzas. \n\n Open:
+        \n Sun&#8211;Thu 11 am &#8211; 1o pm, Fri&#8211;Sat 11 am &#8211; 11 pm
+        \n\nTel: + 48 22 559 92 72</string>
+    <string name="pizza_house">Pizza House</string>
+    <string name="pizza_house_address">58 Legionów Street</string>
+    <string name="pizza_house_info">Italian cuisine: pizzas and pastas. \n\nOpen: \nMon&#8211;Thu 11 am &#8211; 10 pm,
+        \nFri&#8211;Sat 11 am &#8211; 11 pm, \nSun 12 am &#8211; 10 pm
+        \n\nTel: + 48 665 360 364</string>
 </resources>

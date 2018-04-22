@@ -10,7 +10,7 @@
         android:layout_height="100dp"
         android:contentDescription="@string/image_description"
         android:scaleType="center"
-        android:src="@drawable/wolomin_panorama" />
+        tools:src="@drawable/wolomin_panorama" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -33,7 +33,7 @@
             tools:text="@string/about_wolomin" />
 
         <TextView
-            android:id="@+id/location_description"
+            android:id="@+id/location_address"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
@@ -42,9 +42,9 @@
             android:gravity="top"
             android:maxLines="2"
             android:paddingTop="@dimen/small_margin"
-            android:text="@string/wolomin_info"
             android:textColor="@color/textColor"
-            android:textSize="@dimen/normal_text" />
+            android:textSize="@dimen/normal_text"
+            tools:text="@string/wolomin_coordinates" />
 
     </LinearLayout>
 </RelativeLayout>

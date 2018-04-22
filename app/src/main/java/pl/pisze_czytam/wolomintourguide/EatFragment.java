@@ -25,15 +25,16 @@ public class EatFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.list_view, container, false);
 
         final ArrayList<Location> eatLocs = new ArrayList<>();
-        eatLocs.add(new Location(R.drawable.wolomin_panorama, getString(R.string.kebab_king), getString(R.string.kebab_address), getString(R.string.kebab_info)));
-        eatLocs.add(new Location(R.drawable.wolomin_panorama, getString(R.string.pobite_talerze), getString(R.string.pobite_address), getString(R.string.kebab_info)));
-        eatLocs.add(new Location(R.drawable.wolomin_panorama, getString(R.string.street_food), getString(R.string.street_address), getString(R.string.kebab_info)));
-        eatLocs.add(new Location(R.drawable.wolomin_panorama, getString(R.string.przystanek_w), getString(R.string.przystanek_address), getString(R.string.kebab_info)));
-        eatLocs.add(new Location(R.drawable.wolomin_panorama, getString(R.string.wakacje_na_poludniu), getString(R.string.wakacje_na_poludniu), getString(R.string.kebab_info)));
-        eatLocs.add(new Location(R.drawable.wolomin_panorama, getString(R.string.obiadek_patelnia), getString(R.string.obiadek_p_address), getString(R.string.kebab_info)));
-        eatLocs.add(new Location(R.drawable.wolomin_panorama, getString(R.string.obiadek_wilenska), getString(R.string.obiadek_w_address), getString(R.string.kebab_info)));
-        eatLocs.add(new Location(R.drawable.biesiadowo, getString(R.string.biesiadowo), getString(R.string.biesiadowo_address), getString(R.string.kebab_info)));
-        eatLocs.add(new Location(R.drawable.wolomin_panorama, getString(R.string.thai_viet), getString(R.string.thai_viet_address), getString(R.string.kebab_info)));
+        eatLocs.add(new Location(R.drawable.kebab_king, getString(R.string.kebab_king), getString(R.string.kebab_address), getString(R.string.kebab_info)));
+        eatLocs.add(new Location(R.drawable.pobite_talerze, getString(R.string.pobite_talerze), getString(R.string.pobite_address), getString(R.string.pobite_info)));
+        eatLocs.add(new Location(R.drawable.street_food, getString(R.string.street_food), getString(R.string.street_address), getString(R.string.street_info)));
+        eatLocs.add(new Location(R.drawable.przystanek_w, getString(R.string.przystanek_w), getString(R.string.przystanek_address), getString(R.string.przystanek_info)));
+        eatLocs.add(new Location(R.drawable.wakacje_poludnie, getString(R.string.wakacje_na_poludniu), getString(R.string.wakacje_address), getString(R.string.wakacje_info)));
+        eatLocs.add(new Location(R.drawable.obiadek_patelnia, getString(R.string.obiadek_patelnia), getString(R.string.obiadek_p_address), getString(R.string.obiadek_p_info)));
+        eatLocs.add(new Location(R.drawable.obiadek_wilenska, getString(R.string.obiadek_wilenska), getString(R.string.obiadek_w_address), getString(R.string.obiadek_w_info)));
+        eatLocs.add(new Location(R.drawable.biesiadowo, getString(R.string.biesiadowo), getString(R.string.biesiadowo_address), getString(R.string.biesiadowo_info)));
+        eatLocs.add(new Location(R.drawable.thai_viet, getString(R.string.thai_viet), getString(R.string.thai_viet_address), getString(R.string.thai_viet_info)));
+        eatLocs.add(new Location(R.drawable.pizza_house, getString(R.string.pizza_house), getString(R.string.pizza_house_address), getString(R.string.pizza_house_info)));
 
         Collections.sort(eatLocs, new Comparator<Location>() {
             @Override
