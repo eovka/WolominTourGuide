@@ -7,17 +7,27 @@
         <item
             android:id="@+id/nav_history"
             android:title="@string/town_history" />
-        <item
-            android:id="@+id/nav_see"
-            android:title="@string/see" />
-        <item
-            android:id="@+id/nav_eat"
-            android:title="@string/eat" />
-        <item
-            android:id="@+id/nav_drink"
-            android:title="@string/drink" />
-        <item
-            android:id="@+id/nav_sleep"
-            android:title="@string/sleep" />
+        <item android:title="@string/where_to">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_go"
+                        android:icon="@drawable/ic_directions_walk"
+                        android:title="@string/go" />
+                    <item
+                        android:id="@+id/nav_eat"
+                        android:icon="@drawable/ic_eat"
+                        android:title="@string/eat" />
+                    <item
+                        android:id="@+id/nav_drink"
+                        android:icon="@drawable/ic_drink"
+                        android:title="@string/drink" />
+                    <item
+                        android:id="@+id/nav_sleep"
+                        android:icon="@drawable/ic_sleep"
+                        android:title="@string/sleep" />
+                </group>
+            </menu>
+        </item>
     </group>
 </menu>
