@@ -14,6 +14,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
+import static pl.pisze_czytam.wolomintourguide.MainFragment.ADDRESS;
+import static pl.pisze_czytam.wolomintourguide.MainFragment.DESCRIPTION;
+import static pl.pisze_czytam.wolomintourguide.MainFragment.IMAGE_ID;
+import static pl.pisze_czytam.wolomintourguide.MainFragment.NAME;
 
 public class EatFragment extends Fragment {
 
@@ -56,10 +60,10 @@ public class EatFragment extends Fragment {
                 String name = eatLocs.get(position).getLocationName();
                 String address = eatLocs.get(position).getLocationAddress();
                 String description = eatLocs.get(position).getLocationDescription();
-                bundle.putInt("imageId", imageId);
-                bundle.putString("name", name);
-                bundle.putString("address", address);
-                bundle.putString("description", description);
+                bundle.putInt(IMAGE_ID, imageId);
+                bundle.putString(NAME, name);
+                bundle.putString(ADDRESS, address);
+                bundle.putString(DESCRIPTION, description);
                 detailFragment.setArguments(bundle);
                 FragmentManager fragmentManager = getFragmentManager();
                 fragmentManager.beginTransaction().replace(R.id.fragment_container, detailFragment).commit();

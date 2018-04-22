@@ -13,6 +13,11 @@ import pl.pisze_czytam.wolomintourguide.databinding.DetailsActivityBinding;
 
 public class MainFragment extends Fragment {
     DetailsActivityBinding bind;
+    public static final String IMAGE_ID = "imageId";
+    public static final String NAME = "name";
+    public static final String ADDRESS = "address";
+    public static final String DESCRIPTION = "description";
+
     public MainFragment() {
     }
 
@@ -23,10 +28,10 @@ public class MainFragment extends Fragment {
 
         Bundle bundle = getArguments();
         if (bundle != null) {
-            int imageId = bundle.getInt("imageId");
-            String name = bundle.getString("name");
-            String address = bundle.getString("address");
-            String description = bundle.getString("description");
+            int imageId = bundle.getInt(IMAGE_ID);
+            String name = bundle.getString(NAME);
+            String address = bundle.getString(ADDRESS);
+            String description = bundle.getString(DESCRIPTION);
             bind.locationImage.setImageDrawable(getResources().getDrawable(imageId));
             bind.titleView.setText(name);
             bind.addressView.setText(address);
