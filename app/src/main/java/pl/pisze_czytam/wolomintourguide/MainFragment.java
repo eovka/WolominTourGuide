@@ -17,6 +17,7 @@ public class MainFragment extends Fragment {
     public static final String NAME = "name";
     public static final String ADDRESS = "address";
     public static final String DESCRIPTION = "description";
+    Bundle bundle;
 
     public MainFragment() {
     }
@@ -26,7 +27,7 @@ public class MainFragment extends Fragment {
         bind = DataBindingUtil.inflate(inflater, R.layout.details_activity, container, false);
         View rootView = bind.getRoot();
 
-        Bundle bundle = getArguments();
+        bundle = getArguments();
         if (bundle != null) {
             int imageId = bundle.getInt(IMAGE_ID);
             String name = bundle.getString(NAME);
@@ -46,7 +47,15 @@ public class MainFragment extends Fragment {
         bind.addressView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Uri mapsUri = Uri.parse("geo:@52.3425904,21.2011826,13z?q=Wołomin");
+                Uri mapsUri;
+                if (bundle == null) {
+                    mapsUri = Uri.parse("geo:@52.3425904,21.2011826,13z?q=Wołomin");
+                } else {
+                    StringBuilder address = new StringBuilder();
+                    address.append("geo:@0,0?q=").append(bind.addressView.getText().toString()).
+                            append(" ").append(getString(R.string.wolomin));
+                    mapsUri = Uri.parse(address.toString());
+                }
                 Intent mapIntent = new Intent(Intent.ACTION_VIEW, mapsUri);
                 mapIntent.setPackage("com.google.android.apps.maps");
                 if (mapIntent.resolveActivity(getActivity().getPackageManager()) != null) {
