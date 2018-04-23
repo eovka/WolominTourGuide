@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
+import static pl.pisze_czytam.wolomintourguide.MainActivity.STACK;
 import static pl.pisze_czytam.wolomintourguide.MainFragment.ADDRESS;
 import static pl.pisze_czytam.wolomintourguide.MainFragment.DESCRIPTION;
 import static pl.pisze_czytam.wolomintourguide.MainFragment.IMAGE_ID;
@@ -66,7 +67,8 @@ public class EatFragment extends Fragment {
                 bundle.putString(DESCRIPTION, description);
                 detailFragment.setArguments(bundle);
                 FragmentManager fragmentManager = getFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.fragment_container, detailFragment).commit();
+                fragmentManager.getBackStackEntryCount();
+                fragmentManager.beginTransaction().replace(R.id.fragment_container, detailFragment).addToBackStack(STACK).commit();
             }
         });
 

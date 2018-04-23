@@ -86,4 +86,7 @@
     <string name="pizza_house_info">Italian cuisine: pizzas and pastas. \n\nOpen: \nMon&#8211;Thu 11 am &#8211; 10 pm,
         \nFri&#8211;Sat 11 am &#8211; 11 pm, \nSun 12 am &#8211; 10 pm
         \n\nTel: + 48 665 360 364</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

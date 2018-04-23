@@ -7,7 +7,6 @@ import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -17,6 +16,8 @@ import pl.pisze_czytam.wolomintourguide.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
     ActivityMainBinding bind;
+    public static final String STACK = "";
+    int countBackStack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +26,10 @@ public class MainActivity extends AppCompatActivity {
 
         Fragment fragment = new MainFragment();
         FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.getBackStackEntryCount();
         fragmentManager.beginTransaction().replace(R.id.fragment_container, fragment).commit();
+        countBackStack = getFragmentManager().getBackStackEntryCount();
+        countBackStack = 0;
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -56,11 +60,12 @@ public class MainActivity extends AppCompatActivity {
             case R.id.nav_eat:
                 fragment = new EatFragment();
                 break;
-            default: fragment = new MainFragment();
+            default:
+                fragment = new MainFragment();
         }
         FragmentManager fragmentManager = getSupportFragmentManager();
-        fragmentManager.beginTransaction().replace(R.id.fragment_container, fragment).commit();
-        setTitle(menuItem.getTitle());
+        fragmentManager.getBackStackEntryCount();
+        fragmentManager.beginTransaction().replace(R.id.fragment_container, fragment).addToBackStack(STACK).commit();
     }
 
     @Override
@@ -71,5 +76,14 @@ public class MainActivity extends AppCompatActivity {
                 return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (countBackStack == 0) {
+            super.onBackPressed();
+        } else {
+            getFragmentManager().popBackStack();
+        }
     }
 }
