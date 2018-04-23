@@ -7,6 +7,7 @@ import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         fragmentManager.getBackStackEntryCount();
         fragmentManager.beginTransaction().replace(R.id.fragment_container, fragment).commit();
         countBackStack = getFragmentManager().getBackStackEntryCount();
+        // count set to 0 to close app always after pressing back button in the main fragment
         countBackStack = 0;
 
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -80,10 +82,14 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        if (countBackStack == 0) {
-            super.onBackPressed();
-        } else {
-            getFragmentManager().popBackStack();
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
+            drawer.closeDrawer(GravityCompat.START);
+        }
+            if (countBackStack == 0) {
+                super.onBackPressed();
+            } else {
+                getFragmentManager().popBackStack();
+            }
         }
     }
-}
