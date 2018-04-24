@@ -44,7 +44,7 @@
     \n \nTel: +48 22 316 37 37 </string>
     <string name="pobite_talerze">Pobite Talerze</string>
     <string name="pobite_address">Warszawska 21</string>
-    <string name="pobite_info">American and European cuisine: hamburgers, regional beers.
+    <string name="pobite_info">American and European cuisine: hamburgers and chips. Usually (after supply) many regional beers.
         \n \nMon&#8211;Thu: 1 pm &#8211; 10 pm \nFri: 1 pm &#8211; 11 pm \nSat: 12 am &#8211; 11 pm \nSun: 12 am &#8211; 10 pm
     \n \nTel: +48 795 408 464</string>
     <string name="street_food">Street Food Vegan &#38; Grill</string>
@@ -54,39 +54,54 @@
         \n \nTel: +48 729 407 308</string>
     <string name="przystanek_w">Przystanek W</string>
     <string name="przystanek_address">Ogrodowa 9</string>
-    <string name="przystanek_info">European mix cuisine; a lunch of a day, regional beers.
+    <string name="przystanek_info">European mix cuisine. A lunch of a day. A few of regional beers in the menu &#8211; always ask a waiter.
         \n \nMon&#8211;Thu: 9 am &#8211; 10 pm \nFri: 9 am &#8211; 12 pm \nSat: 12 am &#8211; 10 pm \nSun: 12 am &#8211; 9 pm
         \n \nTel: +48 882 633 557</string>
     <string name="wakacje_na_poludniu">Wakacje na południu</string>
     <string name="wakacje_address">Prądzyńskiego 2</string>
-    <string name="wakacje_info">Balkan cuisine, mainly Greek, Croatian and Bulgarian.
+    <string name="wakacje_info">Balkan cuisine, mainly Greek, Croatian and Bulgarian. A lot of wines to choose.
     \n \nMon&#8211;Thu: 11 am &#8211; 10 pm \nFri: 11 am &#8211; 11 pm \nSat: 12 am &#8211; 10 pm \nSun: 12 am &#8211; 9 pm
     \n \nTel: +48 531 531 727</string>
     <string name="obiadek_wilenska">Obiadek Wileńska</string>
     <string name="obiadek_w_address">Wileńska 41</string>
-    <string name="obiadek_w_info">Polish traditional lunches and dinners; a special lunch of a day
+    <string name="obiadek_w_info">Polish traditional lunches and dinners. A special offer for a lunch of a day (soup and main dish).
         \n \nMon&#8211;Fri: 10 am &#8211; 6 pm \nSat&#8211;Sun: closed
         \n \nTel: +48 606 843 743</string>
     <string name="obiadek_patelnia">Obiadek na patelni</string>
     <string name="obiadek_p_address">Moniuszki 4A</string>
-    <string name="obiadek_p_info">Frying Polish traditional food, dumplings and meat dishes
+    <string name="obiadek_p_info">Frying Polish traditional food, dumplings and meat dishes.
     \n \nMon&#8211;Fri: 11 am &#8211; 7 pm \nSat: 12 am &#8211; 6 pm\nSun: closed
     \n \nTel: +48 512 925 046</string>
     <string name="thai_viet">Thai &#38; Viet</string>
     <string name="thai_viet_address">Moniuszki 10</string>
-    <string name="thai_viet_info"> Thai and Vietnamese cuisine with Polish ingredients.
+    <string name="thai_viet_info"> Thai and Vietnamese cuisine with Polish ingredients. Almost nothing to drink.
     \n \nMon&#8211;Sun: 11 am &#8211; 9 pm</string>
     <string name="biesiadowo">Biesiadowo</string>
     <string name="biesiadowo_address">Sportowa 10</string>
-    <string name="biesiadowo_info">Polish version of Italian cuisine: pizzas. \n\n Open:
-        \n Sun&#8211;Thu 11 am &#8211; 10 pm, Fri&#8211;Sat 11 am &#8211; 11 pm
+    <string name="biesiadowo_info">Polish version of Italian cuisine: pizzas.
+        \n\nSun&#8211;Thu 11 am &#8211; 10 pm, Fri&#8211;Sat 11 am &#8211; 11 pm
         \n\nTel: + 48 22 559 92 72</string>
     <string name="pizza_house">Pizza House</string>
-    <string name="pizza_house_address">58 Legionów 58</string>
-    <string name="pizza_house_info">Italian cuisine: pizzas and pastas. \n\nOpen: \nMon&#8211;Thu 11 am &#8211; 10 pm,
-        \nFri&#8211;Sat 11 am &#8211; 11 pm, \nSun 12 am &#8211; 10 pm
+    <string name="pizza_house_address">Legionów 58</string>
+    <string name="pizza_house_info">Italian cuisine: pizzas, pastas and salads. Poor selections of
+        drinks. \n\nMon&#8211;Thu 11 am &#8211; 10 pm \nFri&#8211;Sat 11 am &#8211; 11 pm, \nSun 12 am &#8211; 10 pm
         \n\nTel: + 48 665 360 364</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ryba">Taaka Ryba</string>
+    <string name="ryba_address">Sikorskiego 4</string>
+    <string name="ryba_info">For locals – just “Ryba”. A pub for heavy music, motorcycle and fishing
+        lovers. A lot of different Polish beers and a few stronger alcohols. On one Tuesday in
+        a month – evenings only for ladies. Concerts and exhibitions.</string>
+    <string name="wwl_pub">WWL Pub</string>
+    <string name="wwl_address">Armii Krajowej 28B</string>
+    <string name="wwl_info">A place for fans of dance, hip hop and rap. Disco and karaoke. Only beer
+        to drink, snacks to eat. Younger spirit of the town.</string>
+    <string name="offside">Offside</string>
+    <string name="offside_address">Wileńska 80a</string>
+    <string name="offside_info">A place for football fans. Evening with matched on TV. The legendary
+        pub of local mafia\’s duels. Closed after shooting in 2011, renewed and opened again under
+        different name.</string>
+    <string name="perun">Perun</string>
+    <string name="perun_address">Kościelna 14</string>
+    <string name="perun_info">A pub for real natives – a bit older town’s inhabitants. Relatively
+        cheap beer. Open only till 11 pm. Do you want to feel the climate of a small town? You have to shop up here.</string>
 </resources>
