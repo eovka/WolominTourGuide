@@ -93,7 +93,7 @@
         different name.</string>
     <string name="perun">Perun</string>
     <string name="perun_address">Kościelna 14</string>
-    <string name="perun_info">A pub for real natives – a bit older town’s inhabitants. Relatively
+    <string name="perun_info">A pub for real natives &#8211; a bit older town’s inhabitants. Relatively
         cheap beer. Open only till 10 pm. Do you want to feel the climate of a small town? You have to show up here.</string>
     <string name="livia">Livia</string>
     <string name="livia_address">Mariańska 9a</string>
@@ -106,8 +106,29 @@
     <string name="stefaniacy_info">A hotel with many years of tradition. Situared almost in the centre of the Town, but also quiet and calm. A restaurant for guests. Breakfast for 15 zł. Parking and wireless internet. They speak English!</string>
     <string name="mysliwski">Dom Myśliwski</string>
     <string name="mysliwski_address">Krasickiego 37, Kobyłka</string>
-    <string name="mysliwski_info">“A hunter\’s home” – hostel situated on the borders of two towns: Wołomin and Kobyłka, nearby Grabicz park &#8211; unique bird’s preserve (look into “Go” category to find out more). A very quiet place. Speciality of the house: home-made bread.</string>
+    <string name="mysliwski_info">“A hunter\’s home” &#8211; hostel situated on the borders of two towns: Wołomin and Kobyłka, nearby Grabicz park &#8211; unique bird’s preserve (look into “Go” category to find out more). A very quiet place. Speciality of the house: home-made bread.</string>
     <string name="trylogia">Trylogia</string>
     <string name="trylogia_address">Poniatowskiego 46, Zielonka</string>
     <string name="trylogia_info">Exclusive hotel near Wołomin with climate coming from 17th, 18th and 19th century. SPA, jacuzzi and museum. A restaurant “Dwór Rozłogi” with traditional Polish and hunt\’s dishes for all guests. Forest nearby.</string>
+    <string name="strawbale">Straw bale house</string>
+    <string name="strawbale_address">Racławicka 102, Majdan</string>
+    <string name="strawbale_info">Remember the story about three pigs? This unusual green house built by the owners themselves with straw, clay and wood surely survive more than that. How to build in harmony with nature? Come and inspire yourself. Visits only by appointments.</string>
+    <string name="kultura_cinema">Kultura Cinema</string>
+    <string name="kultura_address">Mickiewicza 8</string>
+    <string name="kultura_info">A cinema in good, old style. Something for those, who don’t like modern multiplexes, but like contemporary movies. You won’t drink here a fancy coffee, but seeing cinema\’s beautiful old-fashioned wooden floor it\’s worth this sacrifice!</string>
+    <string name="nalkowski_museum">Zofia and Wacław Nałkowski Museum></string>
+    <string name="nalkowski_address">Nałkowskiego 17</string>
+    <string name="nalkowski_info">A biographical museum  dedicated to an esteemed geographer, a father of Polish modern geography Wacław Nałkowski and his daughter Zofia, a famous Polish writer. “House at the Fields”, as it was called by Zofia while she was living here, today is full of souvenirs of them.</string>
+    <string name="ossow">Ossów</string>
+    <string name="ossow_address">Matarewicza 148, Ossów</string>
+    <string name="ossow_info">A small village south of Wołomin &#8211; in 1920 a witness of the famous battle of Warsaw, which refers to the decisive Polish victory during the Polish–Soviet War. Poland repulsed and defeated the invading Red Army. Cemetery from 1920 and monuments to Polish and Russian victims of battle of Ossów.</string>
+    <string name="wooden_house">Wooden architecture</string>
+    <string name="wooden_address">Piłsudskiego 5</string>
+    <string name="wooden_info">An old wooden house built in the typical style for a summer resorts in the Masovia region before World War II, but with completely different purpose. In 1930–1937 it was an orthodox chapel of St. St. Peter and Paul.</string>
+    <string name="panorama">Panorama of Warsaw</string>
+    <string name="panorama_address">Chrobrego 3</string>
+    <string name="panorama_info">Take the photo of the all Warsaw’s skyscrapers. You have to be lucky to get inside the right block house to get this view. But sometimes it\’s really good to look from the perspective.</string>
+    <string name="grabicz">Grabicz</string>
+    <string name="grabicz_address">Legionów 138</string>
+    <string name="grabicz_info">Founded in 1978 on marsh and wetlands in the south of Wołomin to protect rare species of birds and mammals. Area of the preserve is mostly closed for tourist – they can only take a walk along two paths: western and north one. But seeing all those fauna is totally worth it.</string>
 </resources>

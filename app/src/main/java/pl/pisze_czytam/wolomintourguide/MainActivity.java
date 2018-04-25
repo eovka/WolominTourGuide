@@ -59,6 +59,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.nav_history:
                 fragment = new HistoryFragment();
                 break;
+            case R.id.nav_go:
+                fragment = new GoFragment();
+                break;
             case R.id.nav_eat:
                 fragment = new EatFragment();
                 break;
