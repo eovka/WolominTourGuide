@@ -40,38 +40,31 @@
     <string name="kebab_king">Kebab King</string>
     <string name="kebab_address">Wileńska 17B</string>
     <string name="kebab_info">Middle Eastern and Kurdish cuisine: kebabs – on plate and sandwiches, koftas. Meat and
-        vegetarian food. Beer. \n \nMon&#8211;Fri: 10 am &#8211; 11 pm \nSat: 10 am &#8211; 1 am \nSun: 9 am &#8211; 12 pm
-    \n \nTel: +48 22 316 37 37 </string>
+        vegetarian food. Beer. \n \nMon&#8211;Fri: 10 am &#8211; 11 pm \nSat: 10 am &#8211; 1 am \nSun: 9 am &#8211; 12 pm</string>
     <string name="pobite_talerze">Pobite Talerze</string>
     <string name="pobite_address">Warszawska 21</string>
     <string name="pobite_info">American and European cuisine: hamburgers and chips. Usually (after supply) many regional beers.
-        \n \nMon&#8211;Thu: 1 pm &#8211; 10 pm \nFri: 1 pm &#8211; 11 pm \nSat: 12 am &#8211; 11 pm \nSun: 12 am &#8211; 10 pm
-    \n \nTel: +48 795 408 464</string>
+        \n \nMon&#8211;Thu: 1 pm &#8211; 10 pm \nFri: 1 pm &#8211; 11 pm \nSat: 12 am &#8211; 11 pm \nSun: 12 am &#8211; 10 pm</string>
     <string name="street_food">Street Food Vegan &#38; Grill</string>
     <string name="street_address">Mieszka I 17</string>
     <string name="street_info">East Mediterranean street food: vegetarian with a lot of dishes for meat lovers too.
-        \n \nMon&#8211;Sat: 11 am &#8211; 10 pm \nSun: 12 am &#8211; 10 pm
-        \n \nTel: +48 729 407 308</string>
+        \n \nMon&#8211;Sat: 11 am &#8211; 10 pm \nSun: 12 am &#8211; 10 pm</string>
     <string name="przystanek_w">Przystanek W</string>
     <string name="przystanek_address">Ogrodowa 9</string>
     <string name="przystanek_info">European mix cuisine. A lunch of a day. A few of regional beers in the menu &#8211; always ask a waiter.
-        \n \nMon&#8211;Thu: 9 am &#8211; 10 pm \nFri: 9 am &#8211; 12 pm \nSat: 12 am &#8211; 10 pm \nSun: 12 am &#8211; 9 pm
-        \n \nTel: +48 882 633 557</string>
+        \n \nMon&#8211;Thu: 9 am &#8211; 10 pm \nFri: 9 am &#8211; 12 pm \nSat: 12 am &#8211; 10 pm \nSun: 12 am &#8211; 9 pm</string>
     <string name="wakacje_na_poludniu">Wakacje na południu</string>
     <string name="wakacje_address">Prądzyńskiego 2</string>
     <string name="wakacje_info">Balkan cuisine, mainly Greek, Croatian and Bulgarian. A lot of wines to choose.
-    \n \nMon&#8211;Thu: 11 am &#8211; 10 pm \nFri: 11 am &#8211; 11 pm \nSat: 12 am &#8211; 10 pm \nSun: 12 am &#8211; 9 pm
-    \n \nTel: +48 531 531 727</string>
+    \n \nMon&#8211;Thu: 11 am &#8211; 10 pm \nFri: 11 am &#8211; 11 pm \nSat: 12 am &#8211; 10 pm \nSun: 12 am &#8211; 9 pm</string>
     <string name="obiadek_wilenska">Obiadek Wileńska</string>
     <string name="obiadek_w_address">Wileńska 41</string>
     <string name="obiadek_w_info">Polish traditional lunches and dinners. A special offer for a lunch of a day (soup and main dish).
-        \n \nMon&#8211;Fri: 10 am &#8211; 6 pm \nSat&#8211;Sun: closed
-        \n \nTel: +48 606 843 743</string>
+        \n \nMon&#8211;Fri: 10 am &#8211; 6 pm \nSat&#8211;Sun: closed</string>
     <string name="obiadek_patelnia">Obiadek na patelni</string>
     <string name="obiadek_p_address">Moniuszki 4A</string>
     <string name="obiadek_p_info">Frying Polish traditional food, dumplings and meat dishes.
-    \n \nMon&#8211;Fri: 11 am &#8211; 7 pm \nSat: 12 am &#8211; 6 pm\nSun: closed
-    \n \nTel: +48 512 925 046</string>
+    \n \nMon&#8211;Fri: 11 am &#8211; 7 pm \nSat: 12 am &#8211; 6 pm\nSun: closed</string>
     <string name="thai_viet">Thai &#38; Viet</string>
     <string name="thai_viet_address">Moniuszki 10</string>
     <string name="thai_viet_info"> Thai and Vietnamese cuisine with Polish ingredients. Almost nothing to drink.
@@ -79,13 +72,11 @@
     <string name="biesiadowo">Biesiadowo</string>
     <string name="biesiadowo_address">Sportowa 10</string>
     <string name="biesiadowo_info">Polish version of Italian cuisine: pizzas.
-        \n\nSun&#8211;Thu 11 am &#8211; 10 pm, Fri&#8211;Sat 11 am &#8211; 11 pm
-        \n\nTel: + 48 22 559 92 72</string>
+        \n\nSun&#8211;Thu 11 am &#8211; 10 pm, Fri&#8211;Sat 11 am &#8211; 11 pm</string>
     <string name="pizza_house">Pizza House</string>
     <string name="pizza_house_address">Legionów 58</string>
     <string name="pizza_house_info">Italian cuisine: pizzas, pastas and salads. Poor selections of
-        drinks. \n\nMon&#8211;Thu 11 am &#8211; 10 pm \nFri&#8211;Sat 11 am &#8211; 11 pm, \nSun 12 am &#8211; 10 pm
-        \n\nTel: + 48 665 360 364</string>
+        drinks. \n\nMon&#8211;Thu 11 am &#8211; 10 pm \nFri&#8211;Sat 11 am &#8211; 11 pm, \nSun 12 am &#8211; 10 pm</string>
     <string name="ryba">Taaka Ryba</string>
     <string name="ryba_address">Sikorskiego 4</string>
     <string name="ryba_info">For locals – just “Ryba”. A pub for heavy music, motorcycle and fishing
@@ -103,5 +94,20 @@
     <string name="perun">Perun</string>
     <string name="perun_address">Kościelna 14</string>
     <string name="perun_info">A pub for real natives – a bit older town’s inhabitants. Relatively
-        cheap beer. Open only till 11 pm. Do you want to feel the climate of a small town? You have to shop up here.</string>
+        cheap beer. Open only till 10 pm. Do you want to feel the climate of a small town? You have to show up here.</string>
+    <string name="livia">Livia</string>
+    <string name="livia_address">Mariańska 9a</string>
+    <string name="livia_info">Feel the climate of ‘80! An old-fashioned hotel with a communistic atmosphere. Rooms with or without bathrooms, TV, radio, internet. A small restaurant for guests in the building.</string>
+    <string name="alexandra">Alexandra</string>
+    <string name="alexandra_address">1 Maja 22/24</string>
+    <string name="alexandra_info">A hostel &#8211; the cheapest bed and breakfast in the town. Quite good conditions as for the price. 24/7 shop with alcohol downstairs. A bit noisy also because the main road in the front of the building.</string>
+    <string name="stefaniacy">U Stefaniaków</string>
+    <string name="stefaniacy_address">Polna 31</string>
+    <string name="stefaniacy_info">A hotel with many years of tradition. Situared almost in the centre of the Town, but also quiet and calm. A restaurant for guests. Breakfast for 15 zł. Parking and wireless internet. They speak English!</string>
+    <string name="mysliwski">Dom Myśliwski</string>
+    <string name="mysliwski_address">Krasickiego 37, Kobyłka</string>
+    <string name="mysliwski_info">“A hunter\’s home” – hostel situated on the borders of two towns: Wołomin and Kobyłka, nearby Grabicz park &#8211; unique bird’s preserve (look into “Go” category to find out more). A very quiet place. Speciality of the house: home-made bread.</string>
+    <string name="trylogia">Trylogia</string>
+    <string name="trylogia_address">Poniatowskiego 46, Zielonka</string>
+    <string name="trylogia_info">Exclusive hotel near Wołomin with climate coming from 17th, 18th and 19th century. SPA, jacuzzi and museum. A restaurant “Dwór Rozłogi” with traditional Polish and hunt\’s dishes for all guests. Forest nearby.</string>
 </resources>

@@ -65,6 +65,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.nav_drink:
                 fragment = new DrinkFragment();
                 break;
+            case R.id.nav_sleep:
+                fragment = new SleepFragment();
+                break;
             default:
                 fragment = new MainFragment();
         }
