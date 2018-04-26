@@ -71,7 +71,6 @@ public class EatFragment extends Fragment {
                 fragmentManager.beginTransaction().replace(R.id.fragment_container, detailFragment).addToBackStack(STACK).commit();
             }
         });
-
         return rootView;
     }
 }

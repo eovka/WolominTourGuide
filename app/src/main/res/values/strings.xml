@@ -131,4 +131,7 @@
     <string name="grabicz">Grabicz</string>
     <string name="grabicz_address">Legionów 138</string>
     <string name="grabicz_info">Founded in 1978 on marsh and wetlands in the south of Wołomin to protect rare species of birds and mammals. Area of the preserve is mostly closed for tourist – they can only take a walk along two paths: western and north one. But seeing all those fauna is totally worth it.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

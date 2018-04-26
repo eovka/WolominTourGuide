@@ -16,8 +16,12 @@ import android.view.MenuItem;
 import pl.pisze_czytam.wolomintourguide.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
-    ActivityMainBinding bind;
+    private static final String TAG_RETAINED_FRAGMENT = "RetainedFragment";
+    private RetainedFragment mRetainedFragment;
     public static final String STACK = "";
+    ActivityMainBinding bind;
+    FragmentManager fragmentManager;
+    Fragment fragment;
     int countBackStack;
 
     @Override
@@ -25,13 +29,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bind = DataBindingUtil.setContentView(this, R.layout.activity_main);
 
-        Fragment fragment = new MainFragment();
-        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager = getSupportFragmentManager();
         fragmentManager.getBackStackEntryCount();
-        fragmentManager.beginTransaction().replace(R.id.fragment_container, fragment).commit();
         countBackStack = getFragmentManager().getBackStackEntryCount();
-        // count set to 0 to close app always after pressing back button in the main fragment
-        countBackStack = 0;
+
+//         find the retained fragment on activity restarts
+        mRetainedFragment = (RetainedFragment) fragmentManager.findFragmentByTag(TAG_RETAINED_FRAGMENT);
+        if (mRetainedFragment == null) {
+            mRetainedFragment = new RetainedFragment();
+            fragmentManager.beginTransaction().add(mRetainedFragment, TAG_RETAINED_FRAGMENT).addToBackStack(STACK).commit();
+            // load data from a data source
+            mRetainedFragment.setData(mRetainedFragment.getData());
+        } else {
+            fragment = new MainFragment();
+            fragmentManager.beginTransaction().add(R.id.fragment_container, fragment).commit();
+            // count reset to close app always after pressing back button in the main fragment
+            fragmentManager.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
+        }
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -51,10 +65,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void displayFragment(MenuItem menuItem) {
-        Fragment fragment;
         switch (menuItem.getItemId()) {
             case R.id.nav_about:
                 fragment = new MainFragment();
+//                fragmentManager.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
                 break;
             case R.id.nav_history:
                 fragment = new HistoryFragment();
@@ -74,8 +88,6 @@ public class MainActivity extends AppCompatActivity {
             default:
                 fragment = new MainFragment();
         }
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        fragmentManager.getBackStackEntryCount();
         fragmentManager.beginTransaction().replace(R.id.fragment_container, fragment).addToBackStack(STACK).commit();
     }
 
@@ -95,10 +107,10 @@ public class MainActivity extends AppCompatActivity {
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         }
-            if (countBackStack == 0) {
-                super.onBackPressed();
-            } else {
-                getFragmentManager().popBackStack();
-            }
+        if (countBackStack == 0) {
+            super.onBackPressed();
+        } else {
+            getFragmentManager().popBackStack();
         }
     }
+}
