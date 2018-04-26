@@ -116,7 +116,7 @@
     <string name="kultura_cinema">Kultura Cinema</string>
     <string name="kultura_address">Mickiewicza 8</string>
     <string name="kultura_info">A cinema in good, old style. Something for those, who don’t like modern multiplexes, but like contemporary movies. You won’t drink here a fancy coffee, but seeing cinema\’s beautiful old-fashioned wooden floor it\’s worth this sacrifice!</string>
-    <string name="nalkowski_museum">Zofia and Wacław Nałkowski Museum></string>
+    <string name="nalkowski_museum">Zofia and Wacław Nałkowski Museum</string>
     <string name="nalkowski_address">Nałkowskiego 17</string>
     <string name="nalkowski_info">A biographical museum  dedicated to an esteemed geographer, a father of Polish modern geography Wacław Nałkowski and his daughter Zofia, a famous Polish writer. “House at the Fields”, as it was called by Zofia while she was living here, today is full of souvenirs of them.</string>
     <string name="ossow">Ossów</string>
@@ -131,7 +131,4 @@
     <string name="grabicz">Grabicz</string>
     <string name="grabicz_address">Legionów 138</string>
     <string name="grabicz_info">Founded in 1978 on marsh and wetlands in the south of Wołomin to protect rare species of birds and mammals. Area of the preserve is mostly closed for tourist – they can only take a walk along two paths: western and north one. But seeing all those fauna is totally worth it.</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

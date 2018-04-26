@@ -6,7 +6,7 @@
             android:title="@string/about_wolomin" />
         <item
             android:id="@+id/nav_history"
-            android:title="@string/town_history" />
+            android:title="@string/history_wolomin" />
         <item android:title="@string/where_to">
             <menu>
                 <group android:checkableBehavior="single">

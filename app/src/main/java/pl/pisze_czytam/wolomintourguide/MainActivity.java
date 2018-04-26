@@ -16,8 +16,6 @@ import android.view.MenuItem;
 import pl.pisze_czytam.wolomintourguide.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
-    private static final String TAG_RETAINED_FRAGMENT = "RetainedFragment";
-    private RetainedFragment mRetainedFragment;
     public static final String STACK = "";
     ActivityMainBinding bind;
     FragmentManager fragmentManager;
@@ -33,18 +31,9 @@ public class MainActivity extends AppCompatActivity {
         fragmentManager.getBackStackEntryCount();
         countBackStack = getFragmentManager().getBackStackEntryCount();
 
-//         find the retained fragment on activity restarts
-        mRetainedFragment = (RetainedFragment) fragmentManager.findFragmentByTag(TAG_RETAINED_FRAGMENT);
-        if (mRetainedFragment == null) {
-            mRetainedFragment = new RetainedFragment();
-            fragmentManager.beginTransaction().add(mRetainedFragment, TAG_RETAINED_FRAGMENT).addToBackStack(STACK).commit();
-            // load data from a data source
-            mRetainedFragment.setData(mRetainedFragment.getData());
-        } else {
+        if (savedInstanceState == null) {
             fragment = new MainFragment();
             fragmentManager.beginTransaction().add(R.id.fragment_container, fragment).commit();
-            // count reset to close app always after pressing back button in the main fragment
-            fragmentManager.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
         }
 
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -68,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
         switch (menuItem.getItemId()) {
             case R.id.nav_about:
                 fragment = new MainFragment();
-//                fragmentManager.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
                 break;
             case R.id.nav_history:
                 fragment = new HistoryFragment();
@@ -89,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
                 fragment = new MainFragment();
         }
         fragmentManager.beginTransaction().replace(R.id.fragment_container, fragment).addToBackStack(STACK).commit();
+        setTitle(menuItem.getTitle());
     }
 
     @Override

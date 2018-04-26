@@ -73,4 +73,10 @@ public class EatFragment extends Fragment {
         });
         return rootView;
     }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        getActivity().setTitle(R.string.eat);
+    }
 }

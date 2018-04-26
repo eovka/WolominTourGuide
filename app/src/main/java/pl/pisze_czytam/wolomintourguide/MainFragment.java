@@ -37,6 +37,7 @@ public class MainFragment extends Fragment {
             bind.titleView.setText(name);
             bind.addressView.setText(address);
             bind.locationDescription.setText(description);
+            getActivity().setTitle(name);
         } else {
         bind.locationImage.setImageDrawable(getResources().getDrawable(R.drawable.wolomin_panorama));
         bind.titleView.setText(R.string.about_wolomin);
@@ -64,5 +65,14 @@ public class MainFragment extends Fragment {
             }
         });
         return rootView;
+    }
+    @Override
+    public void onResume() {
+        super.onResume();
+        if (bundle != null) {
+            getActivity().setTitle(bundle.getString(NAME));
+        } else {
+            getActivity().setTitle(R.string.app_name);
+        }
     }
 }
