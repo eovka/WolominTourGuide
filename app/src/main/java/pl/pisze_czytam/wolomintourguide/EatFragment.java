@@ -68,7 +68,10 @@ public class EatFragment extends Fragment {
                 detailFragment.setArguments(bundle);
                 FragmentManager fragmentManager = getFragmentManager();
                 fragmentManager.getBackStackEntryCount();
-                fragmentManager.beginTransaction().replace(R.id.fragment_container, detailFragment).addToBackStack(STACK).commit();
+                fragmentManager.beginTransaction().setCustomAnimations(R.animator.slide_in_left,
+                        R.animator.slide_out_right, 0, 0)
+                        .replace(R.id.fragment_container, detailFragment)
+                        .addToBackStack(STACK).commit();
             }
         });
         return rootView;
