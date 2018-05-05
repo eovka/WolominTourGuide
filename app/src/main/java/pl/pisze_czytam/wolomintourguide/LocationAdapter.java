@@ -27,13 +27,14 @@ public class LocationAdapter extends ArrayAdapter<Location> {
         }
 
         Location currentLoc = getItem(position);
-
-        ImageView locImage = listItemView.findViewById(R.id.location_image);
-        locImage.setImageResource(currentLoc.getImageResource());
-        TextView locName = listItemView.findViewById(R.id.location_name);
-        locName.setText(currentLoc.getLocationName());
-        TextView locAddress = listItemView.findViewById(R.id.location_address);
-        locAddress.setText(currentLoc.getLocationDescription());
+        ViewHolder holder = new ViewHolder();
+        holder.locImage = listItemView.findViewById(R.id.location_image);
+        holder.locImage.setImageResource(currentLoc.getImageResource());
+        holder.locName = listItemView.findViewById(R.id.location_name);
+        holder.locName.setText(currentLoc.getLocationName());
+        holder.locDescription = listItemView.findViewById(R.id.location_description);
+        holder.locDescription.setText(currentLoc.getLocationDescription());
+        listItemView.setTag(holder);
 
         return listItemView;
     }
